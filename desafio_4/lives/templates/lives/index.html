@@ -1,0 +1,9 @@
+{% if lives %}
+<ul>
+  {% for live in lives %}
+  <li>{{ live.nome }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Nenhuma aula encontrada.</p>
+{% endif %}
